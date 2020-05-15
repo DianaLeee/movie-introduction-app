@@ -1,10 +1,5 @@
 # Movie App
-영화 정보를 보여주는 어플리케이션
+[결과물](https://dianaleee.github.io/movie-introduction-app/)
 
-## Tech Stack
-- [x] React
-- [x] Typescript
-- [x] styled-components
-- [x] react-router-dom
-- [ ] Storybook
-
+This is cloned repo of [original repository](https://github.com/DianaLeee/TIL/tree/master/coding/movie-app)   
+Deploy하기 위해 별도의 repository로 분리
