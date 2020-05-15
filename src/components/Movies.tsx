@@ -112,9 +112,13 @@ const Movie = (movieInfo: IMovie) => {
           <Title>{movieInfo.title}</Title>
           <Year>{movieInfo.year}</Year>
           <GenresList>
-            {movieInfo.genres.slice(0, 3).map((genre, idx) => (
-              <GenreListItem key={idx}>{genre}</GenreListItem>
-            ))}
+            {movieInfo.genres !== undefined ? (
+              movieInfo.genres
+                .slice(0, 3)
+                .map((genre, idx) => <GenreListItem key={idx}>{genre}</GenreListItem>)
+            ) : (
+              <></>
+            )}
           </GenresList>
           <Summary>{movieInfo.summary.slice(0, 180)}...</Summary>
         </MovieDataContainer>
